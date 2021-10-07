@@ -1,0 +1,45 @@
+API restaurants
+
+Do a simple api crud for restaurants with authentification 
+
+Lenguajes: 
+- Node.Js ----
+- PHP     ----
+- Laravel ----
+
+
+Tools
+*** FOR RESTAURANTS ***
+- GET:
+ -- Get all restaurants ( /api/restaurants )
+ -- Get all restaurants of a category ( /api/restaurants/category/:id )
+ -- Get a specific restaurants ( /api/restaurants/:id )
+- POST:
+ -- Add a restaurants ( /api/restaurants )
+- PUT:
+ -- Update a restaurants ( /api/restaurants/:id )
+- DELETE:
+ -- Remove a restaurants ( /api/restaurants/:id )
+
+*** FOR USERS ***
+- GET:
+ -- Get user information ( /api/auth )
+- POST:
+ -- Create new user ( /api/users )
+ -- Log in ( /api/auth )
+
+Database
+*** RESTAURANTS ***
+- resto_id          | int(11)    | Primary Key
+- resto_name        | char(150)  | 
+- resto_description | text       |
+- resto_location    | text       |
+- resto_category    | int(11)    |
+- resto_image       | text       |
+- resto_createby    | int(11)    |
+- resto_active      | tinyint(1) |
+
+*** USERS ***
+- user_id          | int(11)    | Primary Key
+- user_name        | char(150)  | 
+- user_password    | text       |
